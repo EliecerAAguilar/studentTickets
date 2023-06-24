@@ -5,19 +5,19 @@ import java.io.Serializable;
 public class Student implements Serializable {
     private String _user;
     private String _pass;
-    private Boolean status;
-    private Boolean firstLogin;
+    private boolean status;
+    private boolean firstLogin;
 
     public Student() {
     }
 
-    public Student(String _user, String _pass, Boolean status, Boolean firstLogin) {
+    public Student(String _user, String _pass, boolean status, boolean firstLogin) {
         this._user = _user;
         this._pass = _pass;
         this.status = status;
         this.firstLogin = firstLogin;
     }
-    public Student(String _user, String _pass, Boolean status) {
+    public Student(String _user, String _pass, boolean status) {
         this._user = _user;
         this._pass = _pass;
         this.status = status;
@@ -40,19 +40,19 @@ public class Student implements Serializable {
         this._pass = _pass;
     }
 
-    public Boolean getStatus() {
+    public boolean getStatus() {
         return this.status;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 
-    public Boolean getFirstLogin() {
+    public boolean getFirstLogin() {
         return this.firstLogin;
     }
 
-    public void setFirstLogin(Boolean firstLogin) {
+    public void setFirstLogin(boolean firstLogin) {
         this.firstLogin = firstLogin;
     }
 
