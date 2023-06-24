@@ -1,4 +1,4 @@
-package main.dto;
+package main.java.dto;
 
 import java.io.Serializable;
 
@@ -16,6 +16,12 @@ public class Student implements Serializable {
         this._pass = _pass;
         this.status = status;
         this.firstLogin = firstLogin;
+    }
+    public Student(String _user, String _pass, Boolean status) {
+        this._user = _user;
+        this._pass = _pass;
+        this.status = status;
+        this.firstLogin = true;
     }
 
     public String getUser() {
