@@ -28,6 +28,9 @@ public class StudentTicket implements Serializable {
     public void addTicket(Ticket ticket) {
         this.tickets.add(ticket);
     }
+    public List<Ticket> getTicket() {
+        return this.tickets;
+    }
 
     public List<Ticket> getTickets() {
         return this.tickets;
@@ -35,9 +38,9 @@ public class StudentTicket implements Serializable {
 
     @Override
     public String toString() {
-        return
-                "student: '" + getStudent().toString() + "'" + "\n" +
-                "ticket: '" + getTickets().toString() + "'" + "\n";
+        return "Student Details:\n" + getStudent().toString()
+                + "Ticket Details:\n" + getTicket().toString();
     }
+
 
 }

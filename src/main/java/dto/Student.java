@@ -58,11 +58,11 @@ public class Student implements Serializable {
 
     @Override
     public String toString() {
-        return
-                "User: '" + getUser() + "'" + "," + "\n" +
-                        "Password: '" + getPass() + "'" + "," + "\n" +
-                        "Status: '" + getStatus() + "'" + "," + "\n" +
-                        "FirstLogin: '" + getFirstLogin() + "'" + "," + "\n";
+        return "Username: " + getUser() + "\n"
+                + "Password: " + getPass() + "\n"
+                + "Status: " + getStatus() + "\n"
+                + "First Login: " + getFirstLogin() + "\n";
     }
+
 
 }

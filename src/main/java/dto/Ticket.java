@@ -68,12 +68,12 @@ public class Ticket implements Serializable {
 
     @Override
     public String toString() {
-        return
-                "name: '" + getName() + "'" + "\n" +
-                        "lastName: '" + getLastName() + "'" + "\n" +
-                        "id: '" + getId() + "'" + "\n" +
-                        "email: '" + getEmail() + "'" + "\n" +
-                        "degree: '" + getDegree() + "'" + "\n";
+        return "Name: " + getName() + "\n"
+                + "Last Name: " + getLastName() + "\n"
+                + "ID: " + getId() + "\n"
+                + "Email: " + getEmail() + "\n"
+                + "Degree: " + getDegree() + "\n";
     }
+
 
 }
