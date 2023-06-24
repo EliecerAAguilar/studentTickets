@@ -1,16 +1,15 @@
-package main.dto;
+package main.java.dto;
 
-import java.util.UUID;
 import java.io.Serializable;
-import java.util.Objects;
+import java.util.UUID;
 
-public class Ticket implements Serializable{
+public class Ticket implements Serializable {
     private String name;
     private String lastName;
     private String id;
     private String email;
     private String degree;
-    private String ticketID = (UUID.randomUUID()).toString();
+    private final String ticketID = (UUID.randomUUID()).toString();
 
     public Ticket() {
     }
@@ -22,7 +21,8 @@ public class Ticket implements Serializable{
         this.email = email;
         this.degree = degree;
     }
-    public String getTicketID(){
+
+    public String getTicketID() {
         return this.ticketID;
     }
 
@@ -70,9 +70,9 @@ public class Ticket implements Serializable{
     public String toString() {
         return
                 "name: '" + getName() + "'" + "\n" +
-                        "lastName: '" + getLastName() + "'" +"\n" +
-                        "id: '" + getId() + "'" +"\n" +
-                        "email: '" + getEmail() + "'" +"\n" +
+                        "lastName: '" + getLastName() + "'" + "\n" +
+                        "id: '" + getId() + "'" + "\n" +
+                        "email: '" + getEmail() + "'" + "\n" +
                         "degree: '" + getDegree() + "'" + "\n";
     }
 
