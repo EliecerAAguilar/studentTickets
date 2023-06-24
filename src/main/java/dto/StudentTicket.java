@@ -2,17 +2,19 @@ package main.java.dto;
 
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class StudentTicket implements Serializable {
     private Student student;
-    private Ticket ticket;
+    private List<Ticket> tickets;
 
     public StudentTicket() {
     }
 
-    public StudentTicket(Student student, Ticket ticket) {
+    public StudentTicket(Student student) {
         this.student = student;
-        this.ticket = ticket;
+        this.tickets = new ArrayList<>();
     }
 
     public Student getStudent() {
@@ -23,19 +25,19 @@ public class StudentTicket implements Serializable {
         this.student = student;
     }
 
-    public void setTicket(Ticket ticket) {
-        this.ticket = ticket;
+    public void addTicket(Ticket ticket) {
+        this.tickets.add(ticket);
     }
 
-    public Ticket getTicket() {
-        return this.ticket;
+    public List<Ticket> getTickets() {
+        return this.tickets;
     }
 
     @Override
     public String toString() {
         return
                 "student: '" + getStudent().toString() + "'" + "\n" +
-                "ticket: '" + getTicket().toString() + "'" + "\n";
+                "ticket: '" + getTickets().toString() + "'" + "\n";
     }
 
 }
