@@ -72,7 +72,8 @@ public class Ticket implements Serializable {
                 + "Last Name: " + getLastName() + "\n"
                 + "ID: " + getId() + "\n"
                 + "Email: " + getEmail() + "\n"
-                + "Degree: " + getDegree() + "\n";
+                + "Degree: " + getDegree() + "\n"
+                + "TicketId: " + getTicketID()+ "\n";
     }
 
 
